@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Floods Prediction</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #dcdcdc;
+        }
+
+        .navbar {
+            background-color: black;
+            padding: 15px;
+        }
+
+        .navbar h1 {
+            color: #39ff14;
+            display: inline;
+            margin: 0;
+        }
+
+        .nav-links {
+            float: right;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .container {
+            width: 60%;
+            margin: 40px auto;
+        }
+
+        input {
+            width: 90%;
+            padding: 8px;
+            margin-bottom: 20px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .col {
+            width: 48%;
+        }
+
+        button {
+            padding: 8px 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <h1>Floods Prediction</h1>
+    <div class="nav-links">
+        <a href="/">Home</a>
+    </div>
+</div>
+
+<div class="container">
+<form action="/result" method="post">
+
+<div class="row">
+<div class="col">
+<label>Cloud Cover</label>
+<input type="text" name="Cloud Cover">
+</div>
+
+<div class="col">
+<label>Annual Rain Fall</label>
+<input type="text" name="ANNUAL">
+</div>
+</div>
+
+<label>Jan-Feb Rainfall</label>
+<input type="text" name="Jan-Feb">
+
+<div class="row">
+<div class="col">
+<label>March-May Rainfall</label>
+<input type="text" name="Mar-May">
+</div>
+
+<div class="col">
+<label>June-September</label>
+<input type="text" name="Jun-Sep">
+</div>
+</div>
+
+<button type="submit">Predict</button>
+
+</form>
+</div>
+
+</body>
+</html>
